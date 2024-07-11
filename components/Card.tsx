@@ -3,7 +3,7 @@ import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function Card(props: any) {
-    console.log(props);
+    console.log(props.data);
 
     function mensaje(mascota: any) {
         Alert.alert("INFORMACIÓN", "El nombre de la mascota es:" + mascota.nombre)
@@ -13,7 +13,7 @@ export default function Card(props: any) {
 
         <TouchableOpacity onPress={() => mensaje(props.data)}>
             <View style={styles.container}>
-                <Text style={styles.txt} > Nombre: {props.data.nombre}</Text>
+                <Text style={styles.txt} > Nombre: {props.data.name}</Text>
                 <Text style={styles.txt}>Especie: {props.data.especie}</Text>
                 <Text style={styles.txt}>Edad: {props.data.edad}</Text>
             </View>

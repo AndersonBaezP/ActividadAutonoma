@@ -10,6 +10,9 @@ import RegistroScreen from '../screens/RegistroScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import MascotaScreen from '../screens/MascotaScreen';
 import ListaMascotaScreen from '../screens/ListaMascotaScreen';
+import CamaraScreen from '../screens/CamaraScreen';
+import GaleriaScreen from '../screens/GaleriaScreen';
+import MapaScreen from '../screens/MapaScreen';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +33,9 @@ function MyDrawer() {
     <Drawer.Navigator >
         <Drawer.Screen name="Welcome" component={WelcomeScreen} />
         <Drawer.Screen name='Mascota' component={MyTops}/>
+        <Drawer.Screen name='Camara' component={CamaraScreen}/> 
+        <Drawer.Screen name='Galeria' component={GaleriaScreen}/> 
+        <Drawer.Screen name='Mapa' component={MapaScreen}/> 
     </Drawer.Navigator>
   );
 }
